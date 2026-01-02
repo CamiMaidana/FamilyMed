@@ -32,5 +32,5 @@ export default defineConfig({
   ],
   server: { port: 5173 },
   // GitHub Pages (Project site): https://<user>.github.io/<repo>/
-  base: ghPagesBase
+  base: '/FamilyMed/'
 });
