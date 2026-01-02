@@ -1,0 +1,67 @@
+:root{
+  --bg:#0b1220;
+  --card:#101a2e;
+  --stroke:#1f2a44;
+  --text:#e5e7eb;
+  --muted:#94a3b8;
+  --blue:#2563eb;
+  --green:#16a34a;
+  --red:#b91c1c;
+  --yellow:#a16207;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+  background:var(--bg);
+  color:var(--text);
+}
+a{color:inherit}
+.container{max-width:980px;margin:0 auto;padding:16px}
+.card{
+  background:var(--card);
+  border:1px solid var(--stroke);
+  border-radius:16px;
+  padding:14px;
+  box-shadow:0 8px 24px rgba(0,0,0,.25);
+}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.col{flex:1;min-width:260px}
+h1,h2,h3{margin:0 0 10px 0}
+.muted{color:var(--muted)}
+.btn{
+  border:1px solid var(--stroke);
+  background:#0e1730;
+  color:var(--text);
+  padding:10px 12px;
+  border-radius:12px;
+  cursor:pointer;
+}
+.btn:hover{filter:brightness(1.08)}
+.btn.primary{background:var(--blue); border-color:rgba(255,255,255,.12)}
+.btn.green{background:var(--green); border-color:rgba(255,255,255,.12)}
+.btn.red{background:var(--red); border-color:rgba(255,255,255,.12)}
+.btn.small{padding:7px 10px;border-radius:10px;font-size:14px}
+.input{
+  width:100%;
+  padding:10px 12px;
+  border-radius:12px;
+  border:1px solid var(--stroke);
+  background:#0e1730;
+  color:var(--text);
+}
+hr{border:none;border-top:1px solid var(--stroke);margin:12px 0}
+.badge{
+  display:inline-flex; align-items:center; gap:6px;
+  padding:6px 10px; border-radius:999px;
+  border:1px solid var(--stroke); background:#0e1730;
+  font-size:13px;
+}
+.badge.warn{border-color:rgba(255,193,7,.3)}
+.badge.danger{border-color:rgba(255,0,0,.25)}
+.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.list{display:flex;flex-direction:column;gap:10px}
+.item{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.item-left{display:flex;flex-direction:column;gap:4px}
+.item-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
